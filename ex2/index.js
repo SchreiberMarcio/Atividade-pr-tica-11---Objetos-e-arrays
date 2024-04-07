@@ -16,15 +16,12 @@ b. Adicione "Amarelo" e "Verde"
 c. Adicione "Roxo"
  */
 
-const rainbow = ["Vermelho", "Laranja", "Preto", "Azul"];
+const rainbow = ["Vermelho", "Laranja", "Preto", "Azul"]; // inicio do rainbow ["Vermelho", "Laranja", "Preto", "Azul"]
 
-const indexPreto = rainbow.indexOf("Preto");
-if (indexPreto !== -1) {
-  rainbow.splice(indexPreto, 1);
-}
+rainbow.splice(rainbow.indexOf("Preto"), 1); // a. Remove "Preto"
 
-rainbow.splice(2, 0, "Amarelo", "Verde");
+rainbow.splice(2, 0, "Amarelo", "Verde"); // b. Adiciona "Amarelo" e "Verde"
 
-rainbow.push("Roxo");
+rainbow.push("Roxo"); // c. Adiciona "Roxo"
 
-console.log(rainbow);
+console.log(rainbow); // ["Vermelho", "Laranja", "Amarelo", "Verde", "Azul", "Roxo"]
